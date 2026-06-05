@@ -7,5 +7,3 @@ env/
 
 .env
 *.log
-
-data/output_results.csv

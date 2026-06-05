@@ -1,0 +1,5 @@
+UID,original_text,field,interpreted,actual
+T017,"colo 5 yrs ago? maybe at OSH, cannot recall findings",procedure_done,no,yes
+T029,"pt says colonoscopy ""maybe 2010"", no documentation",procedure_done,no,yes
+T035,colonoscopy 9/2021 inadequate prep; repeat 3/2022 normal,date_raw,9/2021; 3/2022,3/2022
+T046,"colo? pt unsure, says had ""camera test"" a long time ago",procedure_done,no,yes

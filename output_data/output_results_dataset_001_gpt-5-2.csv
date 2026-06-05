@@ -1,0 +1,51 @@
+UID,screening_mentioned,procedure_done,procedure_type,procedure_status,date_raw,date_converted,result,confidence,needs_human_review,explanation
+T001,yes,yes,colonoscopy,completed,2019,2019-01-01,normal,medium,yes,Note states colonoscopy in 2019 was normal per patient but no report is in the chart.
+T002,yes,no,colonoscopy,recommended,,,unknown,high,no,Note states colorectal cancer screening discussed and patient has never had a colonoscopy.
+T003,yes,no,colonoscopy,denied_no_prior,,,unknown,high,no,Note states patient denies any prior colonoscopy and is considering GI referral.
+T004,yes,yes,colonoscopy,completed,6/14/21,2021-06-14,poor prep,high,no,Note states colonoscopy completed on 6/14/21 with poor prep and repeat advised in 1 year.
+T005,yes,yes,colonoscopy,completed,about 7 yrs ago,2019-01-01,normal_vague,medium,yes,"Note states last colonoscopy was about 7 years ago and was 'ok' per patient, so date is approximate and patient-reported."
+T006,no,no,unknown,not_applicable,,,unknown,high,no,Note only mentions family history of colon cancer and explicitly states no screening information found.
+T007,yes,no,colonoscopy,scheduled,8/2026,,unknown,high,no,Note states colonoscopy is scheduled for 8/2026 with GI and does not indicate it has been completed.
+T008,yes,no,unknown,not_done,,,unknown,high,no,"Note documents a negative Cologuard test (non-colonoscopy) in 03/2023, with no colonoscopy completed mentioned."
+T009,yes,no,colonoscopy,refused,,,unknown,high,no,"Note states the patient declined colonoscopy again, with no evidence it was completed."
+T010,yes,yes,colonoscopy,completed,2015,2015-01-01,polyps; tubular adenoma,high,no,Note documents a completed colonoscopy in 2015 with polyps/tubular adenoma and states repeat is overdue.
+T011,no,no,unknown,not_applicable,,,unknown,high,no,The note does not mention colorectal cancer screening or colonoscopy.
+T012,no,no,unknown,not_applicable,,,unknown,high,no,Note only mentions a Colorado trip and medication refill with no colorectal screening information.
+T013,yes,no,unknown,ordered,,,unknown,high,no,"CRC screening is mentioned with FIT ordered and pending, with no colonoscopy completed."
+T014,yes,no,colonoscopy,ordered,,,unknown,high,no,"Abnormal FIT noted and colonoscopy is needed with GI referral placed, but no completed colonoscopy is documented."
+T015,yes,yes,colonoscopy,completed,2020,2020-01-01,"diverticulosis only, no polyps",high,no,Note states patient is s/p colonoscopy in 2020 with diverticulosis only and no polyps.
+T016,yes,no,colonoscopy,uncertain,,,unknown,low,yes,Note mentions colonoscopy but states no records are available and patient is unsure if it was ever done.
+T017,yes,yes,colonoscopy,uncertain,5 yrs ago?,2021-01-01,unknown,low,yes,Note suggests a prior colonoscopy about 5 years ago at an outside hospital but patient is unsure and cannot recall findings.
+T018,yes,no,colonoscopy,recommended,,,unknown,high,no,"Note indicates prior refusal and current agreement to referral, but no completed colonoscopy is documented."
+T019,yes,yes,colonoscopy,completed,2014,2014-01-01,normal,high,no,Note states last colonoscopy was in 2014 with normal results and repeat due in 2024.
+T020,yes,no,unknown,ordered,,,unknown,high,no,"CRC screening mentioned via Cologuard order, but patient did not complete/return the kit and no colonoscopy is documented as done."
+T021,yes,yes,colonoscopy,completed,02/02/2022,2022-02-02,"3 mm polyp removed, benign pathology",high,no,Note documents a completed colonoscopy on 02/02/2022 with benign polyp pathology.
+T022,yes,no,unknown,uncertain,,,unknown,medium,yes,Patient reports a prior 'colon test' last year that may have been a stool card (not clearly a colonoscopy) and was negative.
+T023,yes,no,colonoscopy,scheduled,tomorrow,,unknown,high,no,"Note discusses bowel prep for a colonoscopy planned for tomorrow, implying it has not yet been completed."
+T024,yes,no,unknown,not_done,,,unknown,high,no,Note explicitly states no CRC screening discussed and contains no evidence of a completed colonoscopy.
+T025,yes,yes,colonoscopy,completed,>10y ago,2016-01-01,unknown,low,yes,"Note states last colonoscopy was over 10 years ago but gives no exact date, only that patient is due and GI consult was sent."
+T026,yes,no,colonoscopy,not_done,,,unknown,high,no,Note states colonoscopy was never completed despite multiple referrals.
+T027,yes,yes,colonoscopy,completed,,,SSA x1,medium,yes,"Note indicates a completed colonoscopy with pathology (SSA x1) and a 5-year repeat interval, but no colonoscopy date is provided."
+T028,yes,yes,colonoscopy,completed,2018,2018-01-01,hemorrhoids only,high,no,Note documents a completed colonoscopy in 2018 with hemorrhoids only and otherwise negative findings.
+T029,yes,yes,colonoscopy,completed,maybe 2010,2010-01-01,unknown,low,yes,"Patient reports a possible prior colonoscopy around 2010, but documentation is missing."
+T030,yes,no,colonoscopy,recommended,,,unknown,high,no,Colonoscopy was discussed but not completed; patient prefers FIT instead.
+T031,yes,no,colonoscopy,not_done,,,unknown,high,no,Note states Cologuard was positive (11/2022) and colonoscopy has not yet been done.
+T032,yes,no,colonoscopy,ordered,,,unknown,high,no,Note states a screening colonoscopy was ordered today (not yet completed).
+T033,yes,yes,colonoscopy,completed,last month,,results pending,medium,yes,Note states colonoscopy was completed 'last month' but exact date cannot be converted without a reference month.
+T034,no,no,unknown,not_applicable,,,unknown,high,no,"Note mentions 'color pale' and labs only, with no colorectal cancer screening or colonoscopy information."
+T035,yes,yes,colonoscopy,completed,3/2022,2022-03-01,normal,high,no,Note documents completed colonoscopies with inadequate prep in 9/2021 and a normal repeat in 3/2022 (most recent used).
+T036,yes,no,colonoscopy,cancelled,,,unknown,high,no,"Note states colorectal cancer screening colonoscopy is overdue and has been cancelled twice, with no completed procedure date given."
+T037,yes,yes,colonoscopy,completed,7-2020,2020-07-01,normal,high,no,Note documents a completed colonoscopy with negative result in July 2020 per outside note.
+T038,yes,no,colonoscopy,not_done,,,unknown,high,no,"Note mentions GI evaluation for colonoscopy but states no procedure date set, so it has not been completed."
+T039,yes,yes,colonoscopy,completed,2021,2021-01-01,adenomas,medium,yes,"Note indicates prior colonoscopy with adenomas and states last was in 2021, but lacks exact date/details."
+T040,yes,no,colonoscopy,not_done,,,unknown,high,no,"CRC screening is mentioned (negative stool occult blood) and colonoscopy is deferred until 2028, with no completed colonoscopy documented."
+T041,yes,no,colonoscopy,cancelled,,,unknown,high,no,"Note states the colonoscopy was cancelled due to no ride, so it was not completed."
+T042,yes,no,colonoscopy,refused,,,unknown,high,no,Note states patient denies prior colonoscopy and refuses the test.
+T043,yes,yes,colonoscopy,completed,,,normal,medium,yes,"Note indicates a colonoscopy report was reviewed with normal findings, but no date is provided."
+T044,yes,no,colonoscopy,scheduled,1/12/24,,unknown,high,no,"Note indicates an abnormal Cologuard with colonoscopy scheduled for 1/12/24, but not documented as completed."
+T045,yes,yes,colonoscopy,completed,2016,2016-01-01,colon cancer,high,no,Note states a colonoscopy was done in 2016 and found colon cancer with subsequent resection.
+T046,yes,yes,colonoscopy,uncertain,a long time ago,,unknown,low,yes,Colonoscopy is mentioned but patient is unsure and only reports a vague prior 'camera test' with no clear date.
+T047,yes,yes,colonoscopy,completed,4/5/23,2023-04-05,tubular adenoma,high,no,Note explicitly states colonoscopy results from 4/5/23 showing tubular adenoma.
+T048,no,no,unknown,not_applicable,,,unknown,high,no,Note fragment discusses vascular follow-up for toe discoloration with no mention of colorectal screening or colonoscopy.
+T049,yes,no,unknown,recommended,,,unknown,high,no,"Note states no prior CRC screening and discusses Cologuard agreement, with no completed colonoscopy documented."
+T050,yes,yes,colonoscopy,completed,approx 2008,2008-01-01,unknown,medium,yes,"Note states a colonoscopy was done approximately in 2008 with none since, and recommends repeat."

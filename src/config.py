@@ -8,12 +8,15 @@ from pathlib import Path
 
 # Project paths
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "data"
+INPUT_DATA_DIR = PROJECT_ROOT / "input_data"
+OUTPUT_DATA_DIR = PROJECT_ROOT / "output_data"
 PROMPTS_DIR = PROJECT_ROOT / "prompts"
 
-INPUT_CSV = DATA_DIR / "synthetic_colo_doc_notes_test_set.csv"
-OUTPUT_CSV = DATA_DIR / "output_results.csv"
+INPUT_CSV = INPUT_DATA_DIR / "sample_dataset_001.csv"
 PROMPT_FILE = PROMPTS_DIR / "extraction_prompt.txt"
+
+OUTPUT_RESULTS_PREFIX = "output_results"
+EVALUATION_RESULTS_PREFIX = "evaluation_result"
 
 
 # Input columns
@@ -23,7 +26,7 @@ NOTE_COLUMN = "synthetic_doc_note_fragment"
 
 # OpenAI API settings
 OPENAI_API_KEY_ENV = "OPENAI_API_KEY"
-OPENAI_MODEL = "gpt-5-mini"
+OPENAI_MODEL = "gpt-5.2"
 REQUEST_TIMEOUT_SECONDS = 60
 MAX_RETRIES = 3
 DRY_RUN = False

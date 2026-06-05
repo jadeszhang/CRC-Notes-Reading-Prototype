@@ -1,18 +1,20 @@
 """Run colonoscopy extraction on the input CSV."""
 
 import csv
+import re
 
 from call_model import call_model, get_client, load_prompt
 from config import (
     DRY_RUN,
     ID_COLUMN,
-    INPUT_CSV,
     NOTE_COLUMN,
-    OUTPUT_CSV,
+    OPENAI_MODEL,
+    OUTPUT_DATA_DIR,
     OUTPUT_FIELDS,
+    OUTPUT_RESULTS_PREFIX,
     PROMPT_FILE,
 )
-from load_data import load_data
+from load_data import get_dataset_id, get_latest_input_csv, load_data
 from parse_output import parse_output
 
 
@@ -26,8 +28,26 @@ def save_results(results, output_csv):
         writer.writerows(results)
 
 
-def run_extraction(input_csv, output_csv):
+def get_model_id(model_name):
+    """Return a file-safe model name."""
+    return re.sub(r"[^A-Za-z0-9]+", "-", model_name).strip("-").lower()
+
+
+def get_output_csv(input_csv):
+    """Build an output file path using the input dataset ID and model."""
+    dataset_id = get_dataset_id(input_csv)
+    model_id = get_model_id(OPENAI_MODEL)
+    return OUTPUT_DATA_DIR / f"{OUTPUT_RESULTS_PREFIX}_{dataset_id}_{model_id}.csv"
+
+
+def run_extraction(input_csv=None, output_csv=None):
     """Load notes, call the model, parse results, and save output."""
+    if input_csv is None:
+        input_csv = get_latest_input_csv()
+
+    if output_csv is None:
+        output_csv = get_output_csv(input_csv)
+
     notes = load_data(input_csv)
     prompt = load_prompt(PROMPT_FILE)
     client = None if DRY_RUN else get_client()
@@ -49,4 +69,4 @@ def run_extraction(input_csv, output_csv):
 
 
 if __name__ == "__main__":
-    run_extraction(INPUT_CSV, OUTPUT_CSV)
+    run_extraction()
