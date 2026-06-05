@@ -26,6 +26,7 @@ OPENAI_API_KEY_ENV = "OPENAI_API_KEY"
 OPENAI_MODEL = "gpt-5-mini"
 REQUEST_TIMEOUT_SECONDS = 60
 MAX_RETRIES = 3
+DRY_RUN = False
 
 
 # Date conversion settings
